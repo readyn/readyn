@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>postPage</title>
+    <link rel="stylesheet" href="assets/css/write.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="assets/css/write.css"> -->
+    <meta name="viewport" content="width=device-width, inital-scale=0">
+    <script>
+      $(function() {
+        var sty1 = {
+          "font-family": "'Noto Sans KR', sans-serif"
+        }
+        var sty2 = {
+          "margin": "0",
+          "margin-top": "114px",
+          "padding": "0"
+        }
+        var sty3 = {
+          "-webkit-appearance": "none",
+          "-moz-appearance": "none",
+          "appearance": "none"
+        }
+        var sty4 = {
+          "width": "100%",
+          "height": "88px",
+          "background": "white",
+          "box-shadow": "0px 1px 6px #DBDBDB",
+          "display": "flex",
+          "justify-content": "center",
+          "position": "fixed",
+          "top": "0",
+          "left": "0",
+          "right": "0"
+        }
+        var sty5 = {
+          "width": "375px",
+          "height": "88px"
+        }
+        var sty6 = {
+          "background": "url( 'assets/images/backButton.png' ) no-repeat",
+          "border": "none",
+          "width": "44px",
+          "height": "44px",
+          "cursor": "pointer",
+          "margin-top": "32px"
+        }
+        var sty7 = {
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty8 ={
+          "width": "375px",
+          "height": "36px",
+          "margin-top": "26px",
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty9 = {
+          "width": "229px",
+          "height": "36px",
+          "margin-bottom": "10px",
+          "padding-right": "115px"
+        }
+        var sty10 = {
+          "font-size": "14px",
+          "font-weight": "700",
+          "width": "auto",
+          "height": "17px",
+          "margin-top": "3px",
+          "display": "inline-block"
+        }
+        var sty11 = {
+          "font-size": "11px",
+          "font-weight": "400",
+          "margin-top": "3px",
+          "color": "#878787"
+        }
+        var sty12 = {
+          "width": "32px",
+          "height": "36px"
+        }
+        var sty13 = {
+          "width": "32px",
+          "height": "26px",
+          "border": "0",
+          "padding": "0",
+          "border-radius": "2px",
+          "background-color": "white",
+          "box-shadow": "0px 3px 6px #DBDBDB",
+          "cursor": "pointer"
+        }
+        var sty14 = {
+          "padding-top": "3px"
+        }
+        var sty15 = {
+          "width": "82px",
+          "height": "36px"
+        }
+        var sty16 = {
+          "width": "72px",
+          "height": "26px",
+          "border": "0",
+          "padding": "0",
+          "margin-left": "10px",
+          "border-radius": "2px",
+          "background-color": "white",
+          "box-shadow": "0px 3px 6px #DBDBDB",
+          "cursor": "pointer"
+        }
+        var sty17 = {
+          "width": "16px",
+          "height": "16px",
+          "padding-top": "3px",
+          "display": "inline"
+        }
+        var sty18 = {
+          "width": "24px",
+          "height": "24px",
+          "padding-top": "3px",
+          "display": "inline"
+        }
+        var sty19 = {
+          "width": "15px",
+          "height": "15px",
+          "display": "inline"
+        }
+        var sty20 = {
+          "display": "inline",
+          "position": "relative",
+          "bottom": "4px"
+        }
+        var sty21 = {
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty22 = {
+          "width": "375px",
+          "height": "auto",
+          "margin-top": "11px",
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty23 = {
+          "width": "343px",
+          "font-size": "16px",
+          "font-weight": "700", //px 없음
+          "display": "block"
+        }
+        var sty24 = {
+          "width": "343px",
+          "height": "auto",
+          "display": "block"
+        }
+        var sty25 = {
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty26 = {
+          "width": "375px",
+          "height": "auto",
+          "margin-top": "11px",
+          "display": "flex",
+          "justify-content": "center"
+        }
+        var sty27 = {
+          "width": "343px",
+          "font-size": "15px",
+          "font-weight": "500",
+          "display": "block"
+        }
+        var sty28 = {
+          "display": "flex",
+          "justify-content": "center",
+          "margin-top": "20px"
+        }
+        var sty29 = {
+          "width": "343px"
+        }
+        var sty30 = {
+          "width": "auto",
+          "height": "26px",
+          "border": "0",
+          "padding": "0",
+          "margin": "0px",
+          "border-radius": "2px",
+          "background-color": "white",
+          "box-shadow": "0px 3px 6px #DBDBDB",
+          "cursor": "pointer",
+          "display": "inline-block"
+        }
+        var sty31 ={
+          "padding-top": "3px",
+          "margin-left": "6px",
+          "display": "inline-block"
+        }
+        var sty32 ={
+          "display": "inline-block",
+          "position": "relative",
+          "bottom": "4px",
+          "margin-right": "6px"
+        }
+        var sty33 = {
+          "display": "inline-block",
+          "margin-left": "16px"
+        }
+        var sty34 = {
+          "display": "inline-block",
+          "font-size": "12px",
+          "font-weight": "500",
+          "display": "inline-block",
+          "position": "relative",
+          "bottom": "3px"
+        }
+        var sty35 = {
+          "width": "100%",
+          "height": "1px",
+          "background": "#EEEEEE",
+          "margin-top": "16px",
+          "margin-bottom": "16px"
+        }
+        $.each($("*"), function (i, o) {
+            $(this).css(sty1);
+        });
+        $.each($("body"), function (i, o) {
+            $(this).css(sty2);
+        });
+        $.each($("button"), function (i, o) {
+            $(this).css(sty3);
+        });
+        $.each($(".topBar"), function (i, o) {
+            $(this).css(sty4);
+        });
+        $.each($(".backButtonLine"), function (i, o) {
+            $(this).css(sty5);
+        });
+        $.each($("#backButton"), function (i, o) {
+            $(this).css(sty6);
+        });
+        $.each($(".postContentTop"), function (i, o) {
+            $(this).css(sty7);
+        });
+        $.each($(".postTop"), function (i, o) {
+            $(this).css(sty8);
+        });
+        $.each($(".postWriterDate"), function (i, o) {
+            $(this).css(sty9);
+        });
+        $.each($(".postWriter"), function (i, o) {
+            $(this).css(sty10);
+        });
+        $.each($(".postDate"), function (i, o) {
+            $(this).css(sty11);
+        });
+        $.each($(".postExpand"), function (i, o) {
+            $(this).css(sty12);
+        });
+        $.each($("#expandButton"), function (i, o) {
+            $(this).css(sty13);
+        });
+        $.each($("#expandButtonImg"), function (i, o) {
+            $(this).css(sty14);
+        });
+        $.each($(".postShare"), function (i, o) {
+            $(this).css(sty15);
+        });
+        $.each($("#shareButton"), function (i, o) {
+            $(this).css(sty16);
+        });
+        $.each($("#postShareImg"), function (i, o) {
+            $(this).css(sty17);
+        });
+        $.each($("#postUserImg"), function (i, o) {
+            $(this).css(sty18);
+        });
+        $.each($("#postUsersmall"), function (i, o) {
+            $(this).css(sty19);
+        });
+        $.each($(".postShareText"), function (i, o) {
+            $(this).css(sty20);
+        });
+        $.each($(".postContentTitle"), function (i, o) {
+            $(this).css(sty21);
+        });
+        $.each($(".postTitleBox"), function (i, o) {
+            $(this).css(sty22);
+        });
+        $.each($(".postTitle"), function (i, o) {
+            $(this).css(sty23);
+        });
+        $.each($(".postContentText"), function (i, o) {
+            $(this).css(sty24);
+        });
+        $.each($(".postContentMainText"), function (i, o) {
+            $(this).css(sty25);
+        });
+        $.each($(".postMainTextBox"), function (i, o) {
+            $(this).css(sty26);
+        });
+        $.each($(".postMainText"), function (i, o) {
+            $(this).css(sty27);
+        });
+        $.each($(".postReplyState"), function (i, o) {
+            $(this).css(sty28);
+        });
+        $.each($(".likeReplyLine"), function (i, o) {
+            $(this).css(sty29);
+        });
+        $.each($("#likeButton"), function (i, o) {
+            $(this).css(sty30);
+        });
+        $.each($("#likeButtonImg"), function (i, o) {
+            $(this).css(sty31);
+        });
+        $.each($(".likeCount"), function (i, o) {
+            $(this).css(sty32);
+        });
+        $.each($(".replyLine"), function (i, o) {
+            $(this).css(sty33);
+        });
+        $.each($(".replyCountText"), function (i, o) {
+            $(this).css(sty34);
+        });        
+        $.each($(".sortationLine"), function (i, o) {
+            $(this).css(sty35);
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <!--상단바-->
+    <div class="topBar">
+      <div class="backButtonLine">
+        <button id="backButton" onclick="history.back()">
+          <img src="assets/images/backButton.png" width="18px" height="18px" alt="Back">
+        </button>
+      </div>
+    </div>
+    <!--상단바-->
+
+    <!--작성자, 날짜, 더보기, 공유-->
+    <div class="postContentTop">
+      <div class="postTop">
+        <div class="postWriterDate">
+          <div class="postWriter">
+            <img id="postUserImg" src="assets/images/user.png" width="24px" height="24px" alt="">
+            <div class="userID">readyn</div>
+          </div>
+          <div class="postDate">
+            01.20 22:39
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--작성자, 날짜, 더보기, 공유-->
+
+    <!--제목-->
+    <div class="postContentTitle">
+      <div class="postTitleBox">
+        <div class="postTitle">
+          Looking for a homebody guitar player.<br>
+          (seoul)
+        </div>
+      </div>
+    </div>
+    <!--제목-->
+    <!--내용-->
+    <div class="postContentMainText">
+      <div class="postMainTextBox">
+        <div class="postMainText">
+         Are you a home body guitar player who
+         dreams of a rock star?
+         Have you had difficlties findig the right
+         band for you?
+
+         the indie band, Soulic paradox,is looking
+         for a guitar player. If you are into it,chect it
+         out and contact us.
+         Send us a simple introduction wirh your
+         name
+         Peace~
+         <div class="ComuImg">
+          <img src="assets/images/kotaro.png" width="260px" height="180px;" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--내용-->
+
+    <!--좋아요, 댓글-->
+    <div class="postLikeReply">
+      <div class="postReplyState">
+        <div class="likeReplyLine">
+          <button id="likeButton" type="button" name="expandButton">
+            <img id="likeButtonImg" src="assets/images/likeImage.png" width="16px" height="16px" alt="">
+            <div class="likeCount">1</div>
+          </button>
+          <div class="replyLine">
+            <div class="replyImageText">
+              <img src="assets/images/chatImage.png" width="16px" height="16px;" alt="">
+              <div class="replyCountText">21</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--좋아요, 댓글-->
+
+    <div class="sortationLine"></div>
+
+    <div class="postReply">
+      <div class="postReplyBox">
+        <div class="topPostReply">
+          <img id="postUsersmall" src="assets/images/user.png" width="12px" height="12px" alt="">
+          <div class="postReplyWriterName">readyn@kakao.com</div>
+          <div class="postReplyWriteDate">01.20 22:38</div>
+        </div>
+        <div class="middlePostReply">
+          <div class="postReplyContent">good</div>
+        </div>
+        <div class="bottomPostReply">
+          <div class="buttonLikeReply">
+
+            <button id="buttonLike" type="button" name="expandButton">
+              <img id="postLikeButtonImg" src="assets/images/likeImage.png" width="13px" height="13px" alt="">
+              <div class="postLikeCount">1</div>
+            </button>
+
+            <button id="buttonReply" type="button" name="expandButton">
+              <img id="postReplyButtonImg" src="assets/images/chatImageNA.png" width="13px" height="13px" alt="">
+              <div class="postReplyCount">12</div>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="z-index:99;bottom:0px;left:0px;right:0px;position:absoulte !important; position:fixed;" class="navigationBar">
+      <div class="search">
+        <div class="searchBox">
+          <input id= "searchInout" type="text" placeholder="댓글을 작성해주세요.">
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

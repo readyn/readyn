@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>homePage</title>
+    <meta name="viewport" content="width=device-width, inital-scale=0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+          var sty1 = {
+            "font-family": "'Noto Sans', sans-serif"
+          }
+          var sty2 = {
+            "margin-bottom": "90px"
+          }
+          var sty3 = {
+            "display": "flex",
+            "justify-content": "center",
+            "align-items": "center",
+            "margin-top": "15px"
+          }
+          var sty4 = {
+            "width": "343px",
+            "height": "36px",
+            "background-color": "#F5F5F5",
+            "border": "0px",
+            "border-radius": "5px"
+          }
+          var sty5 = {
+            "display": "inline-block",
+            "position": "relative",
+            "bottom":"13px",
+            "font-family": "'Noto Sans KR', sans-serif",
+            "font-size": "14px",
+            "width": "280px",
+            "height": "36px",
+            "padding": "0px",
+            "border": "0px",
+            "background-color": "#F5F5F5"
+          }
+          var sty6 = {
+            "outline": "none"
+          }
+          var sty7 = {
+            "margin-top": "9px",
+            "margin-left": "12px",
+            'margin-right': "12px",
+            "margin-bottom": "9px",
+            "display": "inline-block"
+          }
+          var sty8 = {
+            "margin-top": "16px",
+            "display": "flex",
+            "justify-content": "center",
+            "align-items": "center"
+          }
+          var sty9 = {
+            "width": "343px",
+            "height": "60px",
+            "background-color": "white",
+            "border-radius": "2px",
+            "box-shadow": "0px 3px 6px #DBDBDB"
+          }
+          var sty10 = {
+            "width": "343px",
+            "height": "44px"
+          }
+          var sty11 = {
+            "margin-left": "12px",
+            "margin-top": "-10px",
+            "display": "inline-block"
+          }
+          var sty12 = {
+            "display": "inline-block",
+            "font-size": "22px",
+            "position": "relative",
+            "bottom": "8px",
+            "font-weight": "700"
+          }
+          var sty13 = {
+            "margin-top": "16px",
+            "display": "flex",
+            "justify-content": "center"
+          }
+          var sty14 = {
+            "width": "343px",
+            "height": "220px",
+            "margin-top": "10px",
+            "background-color": "white",
+            "border-radius": "2px",
+            "box-shadow": "0px 3px 6px #DBDBDB"
+          }
+          var sty15 = {
+            "width": "343px",
+            "height": "53px"
+          }
+          var sty16 = {
+            "left": "5px",
+            "position": "relative",
+            "top": "5px",
+            "display": "inline",
+            "font-weight": "400",
+            "font-size": "10px",
+            "color" : "#B5B5B5"
+          }
+          var sty17 = {
+            "position": "relative",
+            "display": "inline",
+            "font-weight": "400",
+            "font-size": "10px",
+            "color ": "#B5B5B5",
+            "bottom": "3px"
+          }
+          var sty18 = {
+            "float": "right",
+            "right": "5px",
+            "position": "relative",
+            "top": "10px",
+            "display": "inline",
+            "font-weight": "400",
+            "font-size": "10px",
+            "color ": "#B5B5B5",
+          }
+          var sty29 = {
+            "position": "relative",
+            "display": "inline",
+            "font-weight": "400",
+            "font-size": "10px",
+            "color" : "#B5B5B5",
+            "bottom": "2px"
+          }
+          var sty19 = {
+            "display": "flex",
+            "justify-content": "center",
+            "font-weight": "600"
+          }
+          var sty20 = {
+            "margin-top": "10px",
+            "font-weight": "700",
+            "margin-left": "10px"
+          }
+          var sty21 = {
+            "margin-top": "16px",
+            "display": "flex",
+            "justify-content": "center",
+            "align-items": "center"
+          }
+          var sty22 = {
+            "width": "343px",
+            "height": "50px",
+            "background-color": "white",
+            "border-radius": "2px",
+            "box-shadow": "0px 3px 6px #DBDBDB"
+          }
+          var sty23 = {
+            "width": "343px",
+            "height": "44px"
+          }
+          var sty24 = {
+            "margin-left": "12px",
+            "margin-top": "12px",
+            "display": "inline-block"
+          }
+          var sty25 = {
+            "display": "inline-block",
+            "font-size": "13px",
+            "bottom":"8px",
+            "font-weight": "700" 
+          }
+          var sty26 = {
+            "margin-top": "18px",
+            "width": "343px",
+            "height": "84px"
+          }
+          var sty27 = {
+            "position": "relative",
+            "display": "inline",
+            "font-size": "18px",
+            "bottom": "6px",
+            "left": "5px"
+          }
+          var sty28 = {
+            "position": "relative",
+            "display": "inline",
+            "bottom": "12px"
+          }
+
+          $.each($("*"), function (i, o) {
+            $(this).css(sty1);
+          });
+          $.each($("body"), function (i, o) {
+            $(this).css(sty2);
+          });
+          $.each($(".search"), function (i, o) {
+            $(this).css(sty3);
+          });
+          $.each($(".searchBox"), function (i, o) {
+            $(this).css(sty4);
+          });
+          $.each($("#searchInout"), function (i, o) {
+            $(this).css(sty5);
+          });
+          $.each($("#searchInout:focus"), function (i, o) {
+            $(this).css(sty6);
+          });
+          $.each($("#searchImage"), function (i, o) {
+            $(this).css(sty7);
+          });
+          $.each($(".schoolBox"), function (i, o) {
+            $(this).css(sty8);
+          });
+          $.each($(".school"), function (i, o) {
+            $(this).css(sty9);
+          });
+          $.each($(".schoolBoxTop"), function (i, o) {
+            $(this).css(sty10);
+          });
+          $.each($(".schoolImage"), function (i, o) {
+            $(this).css(sty11);
+          });
+          $.each($(".schoolName"), function (i, o) {
+            $(this).css(sty12);
+          });
+          $.each($("fourmBox"), function (i, o) {
+            $(this).css(sty13);
+          });
+          $.each($(".fourm"), function (i, o) {
+            $(this).css(sty14);
+          });
+          $.each($(".fourmTextLine"), function (i, o) {
+            $(this).css(sty15);
+          });
+          $.each($(".sean"), function (i, o) {
+            $(this).css(sty16);
+          });
+          $.each($(".seantext"), function (i, o) {
+            $(this).css(sty17);
+          });
+          $.each($(".min"), function (i, o) {
+            $(this).css(sty18);
+          });
+          $.each($(".conb"), function (i, o) {
+            $(this).css(sty19);
+          });
+          $.each($(".sul"), function (i, o) {
+            $(this).css(sty20);
+          });
+          $.each($(".schoolBox"), function (i, o) {
+            $(this).css(sty21);
+          });
+          $.each($(".school"), function (i, o) {
+            $(this).css(sty22);
+          });
+          $.each($(".schoolBoxTop"), function (i, o) {
+            $(this).css(sty23);
+          });
+          $.each($(".schoolImage"), function (i, o) {
+            $(this).css(sty24);
+          });
+          $.each($(".schoolName"), function (i, o) {
+            $(this).css(sty25);
+          });
+          $.each($(".schoolBoxBottom"), function (i, o) {
+            $(this).css(sty26);
+          });
+          $.each($(".houseword"), function (i, o) {
+            $(this).css(sty27);
+          });
+          $.each($(".ex"), function (i, o) {
+            $(this).css(sty28);
+          });
+          $.each($(".mintext"), function (i, o) {
+            $(this).css(sty29);
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <!--검색-->
+
+    <div class="schoolBox">
+      <div class="school">
+        <!--로고,이름-->
+        <div class="schoolBoxTop">
+          <div class="schoolName">
+            <div class="schoolNameText">
+              <a href="index.html">
+              <img src="assets/images/ba k.png" style="margin-top: 14px;">
+              </a>
+              <div class="ex">
+              <img src="assets/images/job.png">
+              <div class = "houseword">Job</div>
+            </div>
+            </div>
+          </div>
+        </div>
+    <div class="fourmBox">
+      <div class="fourm">
+        <div class="sean">
+          <img src="assets/images/sean.png">
+          <div class="seantext">1200</div></div>
+        <div class="min">
+          <img src="assets/images/time.png">
+          <div class="mintext">18min</div></div>
+        <div class="conb">
+          <img src="assets/images/conb.png" width="200" height="100">
+        </div>
+        <div class="sul">
+          <div class="name" style="font-weight: 800;">Songdo GS25</div>
+          <div class="number" style="font-weight: 400;">Hourly wage : 9160won</div>
+          <div class="price" style="font-weight: 400;">Tel.032.xxx.xxx</div>
+        </div>
+      </div>
+    </div>
+    <div class="fourmBox">
+      <div class="fourm">
+        <div class="sean">
+          <img src="assets/images/sean.png">
+          <div class="seantext">1200</div></div>
+        <div class="min">
+          <img src="assets/images/time.png">
+          <div class="mintext">18min</div></div>
+        <div class="conb">
+          <img src="assets/images/conb.png" width="200" height="100">
+        </div>
+        <div class="sul">
+          <div class="name" style="font-weight: 800;">Songdo GS25</div>
+          <div class="number" style="font-weight: 400;">Hourly wage : 9160won</div>
+          <div class="price" style="font-weight: 400;">Tel.032.xxx.xxx</div>
+        </div>
+      </div>
+    </div>
+    <!--게시판-->
+
+    <!--공지사항-->
+
+    <!--공지사항-->
+ 
+
+
+
+  </body>
+</html>

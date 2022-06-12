@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="assets/CSS/third.css">
+    <style>
+      
+
+    </style>
+    <script>$('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });</script>
+  </head>
+    <style>
+
+</style>
+<script>
+  $(function() {
+      var sty1 = {
+        "font-family": "'Noto Sans', sans-serif"
+      }
+      var sty2 = {
+        "margin-bottom": "90px"
+      }
+      var sty3 = {
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "margin-top": "16px"
+      }
+      var sty4 = {
+        "width": "343px",
+        "height": "45px",
+        "background-color": "white",
+        "box-shadow":"0px 3px 6px #DBDBDB",
+        "border-radius": "2px"
+      }
+      var sty5 = {
+        "width": "343px",
+        "height": "44px"
+      }
+      var sty6 = {
+        "margin-left": "12px",
+        "margin-top": "12px",
+        "display": "inline-block"
+      }
+      var sty7 = {
+        "display": "inline-block",
+        "font-size": "22px",
+        "position": "relative",
+        "top": "10px",
+        "left": "5px",
+        "font-weight": "700"
+      }
+      var sty8 = {
+        "margin-top": "10px"
+      }
+      var sty9 = {
+        "margin-right": "80px",
+        "display": "inline"
+      }
+      var sty10 = {
+        "color": "#0569CD",
+        "margin-right": "10px",
+        "display": "inline"
+      }
+      var sty11 = {
+        "color": "#0569CD",
+        "font-weight": "300",
+        "margin-top": "20px"
+      }
+      var sty12 = {
+        "position": "relative",
+        "display": "inline",
+        "font-size": "18px",
+        "bottom": "6px",
+        "left": "5px"
+      }
+
+      $.each($("*"), function (i, o) {
+        $(this).css(sty1);
+      });
+      $.each($("body"), function (i, o) {
+        $(this).css(sty2);
+      });
+      $.each($(".nav_menu"), function (i, o) {
+        $(this).css(sty3);
+      });
+      $.each($(".login-page"), function (i, o) {
+        $(this).css(sty4);
+      });
+      $.each($(".form"), function (i, o) {
+        $(this).css(sty5);
+      });
+      $.each($(".form input"), function (i, o) {
+        $(this).css(sty6);
+      });
+      $.each($(".form button"), function (i, o) {
+        $(this).css(sty7);
+      });
+      $.each($(".logmes"), function (i, o) {
+        $(this).css(sty8);
+      });
+      $.each($(".form button:hover,.form button:active,.form button:focus"), function (i, o) {
+        $(this).css(sty9);
+      });
+      $.each($(".form .message"), function (i, o) {
+        $(this).css(sty10);
+      });
+      $.each($(".form .message a "), function (i, o) {
+        $(this).css(sty11);
+      });
+      $.each($(".form .register-form "), function (i, o) {
+        $(this).css(sty12);
+      });
+  });
+</script>
+      
+  <body>
+        <div id="nav_menu">
+      </div>
+      <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button  type="button" onclick="location.href='index.html'">로그인</button>
+            <div class="logmes">
+            <p class="message">계정을 잊으셨나요? <a href="#">ID찾기 또는 비밀번호 찾기</a></p>
+            <p class="message">아직 회원이 아니신가요? <a href="#">회원가입</a></p>
+          </div>
+          </form>
+        </div>
+      </div>
+
+  </body>
+</html>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

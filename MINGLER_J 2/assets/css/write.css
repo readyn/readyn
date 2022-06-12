@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    margin: 0;
+    margin-top: 114px;
+    padding: 0;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.topBar {
+  width: 100%;
+  height: 88px;
+  background: white;
+  box-shadow: 0px 1px 6px #DBDBDB;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+/* width: 100% */
+  left: 0;
+  right: 0;
+}
+.backButtonLine {
+  width: 375px;
+  height: 88px;
+}
+#backButton {
+  background: url( "assets/images/backButton.png" ) no-repeat;
+  border: none;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.postContentTop {
+  display: flex;
+  justify-content: center;
+}
+.postTop {
+  width: 375px;
+  height: 36px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+.postWriterDate {
+  width: 229px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding-right: 115px;
+}
+.postWriter {
+  font-size: 14px;
+  font-weight: 700;
+  width: auto;
+  height: 17px;
+  margin-top: 3px;
+  display: inline-block;
+}
+.postDate {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 3px;
+  color: #878787;
+}
+
+.postExpand {
+  width: 32px;
+  height: 36px;
+}
+#expandButton {
+  width: 32px;
+  height: 26px;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  cursor: pointer;
+}
+#expandButtonImg {
+  padding-top: 3px;
+}
+
+.postShare {
+  width: 82px;
+  height: 36px;
+}
+#shareButton {
+  width: 72px;
+  height: 26px;
+  border: 0;
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  cursor: pointer;
+
+}
+#postShareImg {
+  width: 16px;
+  height: 16px;
+  padding-top: 3px;
+  display: inline;
+}
+#postUserImg {
+  width: 24px;
+  height: 24px;
+  padding-top: 3px;
+  display: inline;
+}
+#postUsersmall {
+  width: 15px;
+  height: 15px;
+
+  display: inline;
+}
+.postShareText {
+  display: inline;
+  position: relative;
+  bottom: 4px;
+}
+
+.postContentTitle {
+  display: flex;
+  justify-content: center;
+}
+.postTitleBox {
+  width: 375px;
+  height: auto;
+  margin-top: 11px;
+  display: flex;
+  justify-content: center;
+}
+.postTitle {
+  width: 343px;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+}
+.postContentText {
+  width: 343px;
+  height: auto;
+  display: block;
+}
+
+.postContentMainText {
+  display: flex;
+  justify-content: center;
+}
+.postMainTextBox {
+  width: 375px;
+  height: auto;
+  margin-top: 11px;
+  display: flex;
+  justify-content: center;
+}
+.postMainText {
+  width: 343px;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+}
+
+.postReplyState {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.likeReplyLine {
+  width: 343px;
+}
+#likeButton {
+  width: auto;
+  height: 26px;
+  border: 0;
+  padding: 0;
+  margin: 0px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  cursor: pointer;
+  display: inline-block;
+}
+#likeButtonImg {
+  padding-top: 3px;
+  margin-left: 6px;
+  display: inline-block;
+}
+.likeCount {
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin-right: 6px;
+}
+
+.replyLine {
+  display: inline-block;
+  margin-left: 16px;
+}
+.replyCountText {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+}
+
+.sortationLine {
+  width: 100%;
+  height: 1px;
+  background: #EEEEEE;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.postReply {
+  display: flex;
+  justify-content: center;
+}
+.postReplyBox {
+  width: 343px;
+}
+.postReplyWriterName {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+}
+.postReplyWriteDate {
+  font-size: 11px;
+  font-weight: 300;
+  color: #878787;
+  margin-left: 3px;
+  display: inline-block;
+}
+
+.middlePostReply {
+  font-size: 13px;
+  font-weight: 500;
+  height: auto;
+}
+
+#buttonLike {
+  width: auto;
+  height: 21px;
+  border: 0;
+  padding: 0;
+  margin: 0px;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  cursor: pointer;
+  display: inline-block;
+}
+.postLikeCount {
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  margin-right: 3px;
+}
+#postLikeButtonImg {
+  position: relative;
+  margin-left: 3px;
+  display: inline-block;
+}
+
+#buttonReply {
+  width: auto;
+  height: 21px;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #DBDBDB;
+  cursor: pointer;
+  display: inline-block;
+}
+.postReplyCount {
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  margin-right: 3px;
+}
+#postReplyButtonImg {
+  display: inline-block;
+  position: relative;
+  margin-left: 3px;
+  display: inline-block;
+}
+.bottomPostReply {
+  margin-top: 6px;
+}
+
+.userID {
+  position: relative;
+  font-size: 15px;
+  display: inline;
+  top:-5px;
+}
+.ComuImg{
+  display: flex;
+  justify-content: center;
+}
+#searchInout {
+  display: flex;
+  position: relative;
+  bottom:0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  width: 350px;
+  height: 36px;
+  padding: 0px;
+  border: 0px;
+  background-color: #F5F5F5;
+  margin: 0 auto;
+}
+#searchInout:focus {
+  outline: none;
+}

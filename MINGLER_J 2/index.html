@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>homePage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="assets/css/mainHome.css"> -->
+    <meta name="viewport" content="width=device-width, inital-scale=0">
+    <script>
+      $(function() {
+          var sty1 = {
+            "font-family": "'Noto Sans', sans-serif"
+          }
+          var sty2 = {
+            "margin-bottom": "90px"
+          }
+          var sty3 = {
+            "display": "flex",
+            "justify-content": "center",
+            "align- tems": "center",
+            "margin-top": "44px"
+          }
+          var sty4 = {
+            "width": "343px",
+            "height": "44px",
+            "background-color": "#F5F5F5",
+            "border": "0px",
+            "border-radius": "5px"
+          }
+          var sty5 = {
+            "font-family": "'Noto Sans JP', sans-serif",
+            "font-size": "14px",
+            "width": "210px",
+            "height": "44px",
+            "padding": "0px",
+            "border": "0px",
+            "position": "relative",
+            "bottom":"15px",
+            "background-color": "#F5F5F5"
+          }
+          var sty6 = {
+            "outline": "none"
+          }
+          var sty7 = {
+            "margin-top": "12px",
+            "margin-left": "12px",
+            'margin-right': "12px",
+            "margin-bottom": "12px"
+          }
+          var sty8 = {
+            "margin-top": "16px",
+            "display": "flex",
+            "justify-content": "center",
+            "align-items": "center"
+          }
+          var sty9 = {
+            "width": "343px",
+            "height": "200px",
+            "background-color": "white",
+            "border-radius": "2px",
+            "box-shadow": "0px 3px 6px #DBDBDB"
+          }
+          var sty10 = {
+            "width": "343px",
+            "height": "44px"
+          }
+          var sty11 = {
+            "margin-left": "12px",
+            "margin-top": "12px",
+            "display": "inline-block"
+          }
+          var sty12 = {
+            "display": "inline-block",
+            "font-size": "22px",
+            "position": "relative",
+            "top": "10px",
+            "left": "5px",
+            "font-weight": "700"
+          }
+          var sty13 = {
+            "margin-top": "18px",
+            "width": "343px",
+            "height": "84px"
+          }
+          var sty14 = {
+            "width": "309px",
+            "height": "72px",
+            "margin-left": "12px"
+          }
+          var sty15 = {
+            "font-weight": "700",
+            "font-size": "12px",
+            "width": "140px",
+            "height": "40px",
+            "background-color": "white",
+            "border-radius": "5px",
+            "border": "0px",
+            "padding": "0px",
+            "margin-left": "10px",
+            "box-shadow": "0px 3px 6px #DBDBDB",
+            "display": "inline-block",
+            "text-align": "left"
+          }
+          var sty16 = {
+            "font-weight": "700",
+            "font-size": "12px",
+            "width": "140px",
+            "height": "40px",
+            "border-radius": "5px",
+            "background-color": "white",
+            "border": "0px",
+            "padding": "0px",
+            "box-shadow": "0px 3px 6px #DBDBDB",
+            "margin-left": "10px",
+            "display": "inline-block",
+            "text-align": "left"
+          }
+          var sty17 = {
+            "font-weight": "700",
+            "font-size": "12px",
+            "width": "140px",
+            "height": "40px",
+            "border-radius": "5px",
+            "background-color": "white",
+            "border": "0px",
+            "padding": "0px",
+            "box-shadow": "0px 3px 6px #DBDBDB",
+            "margin-left": "10px",
+            "display": "inline-block",
+            "text-align": "left"
+          }
+          var sty18 = {
+            "font-weight": "700", // px 없음
+            "font-size": "12px",
+            "width": "140px",
+            "height": "40px",
+            "border-radius": "5px",
+            "background-color": "white",
+            "border": "0px",
+            "padding": "0px",
+            "box-shadow": "0px 3px 6px #DBDBDB",
+            "display": "inline-block",
+            "margin-top": "10px",
+            "margin-left": "10px",
+            "text-align": "left"
+          }
+          var sty19 = {
+            "margin-left": "10px"
+          }
+          var sty20 = {
+            "display": "inline-block",
+            "position": "relative",
+            "top": "-5px",
+            "margin-left": "10px",
+          }
+          var sty21 = {
+            "width": "100%",
+            "height": "180px",
+            "background": "#F5F5F5",
+            "display": "flex",
+            "justify-content": "center"
+          }
+          var sty22 = {
+            "margin-top": "18px"
+          }
+          var sty23 = {
+            "margin-right": "102px"
+          }
+          var sty24 = {
+            "margin-left": "102px"
+          }
+          var sty25 = {
+            "margin-left": "300px"
+          }
+          var sty26 = {
+            "margin-top": "10px"
+          }
+          var sty27 = {
+            "margin-right": "80px",
+            "display": "inline"
+          }
+          var sty28 = {
+            "color": "#0569CD",
+            "margin-right": "10px",
+            "display": "inline"
+          }
+          var sty29 = {
+            "color": "#0569CD",
+            "font-weight": "300",
+            "margin-top": "5px"
+          }
+          var sty30 = {
+            "display": "flex",
+            "color": "#0569CD",
+            "margin-top": "10px"
+          }
+          $.each($("*"), function (i, o) {
+            $(this).css(sty1);
+          });
+          $.each($("body"), function (i, o) {
+            $(this).css(sty2);
+          });
+          $.each($(".searchBox"), function (i, o) {
+            $(this).css(sty3);
+          });
+          $.each($(".search"), function (i, o) {
+            $(this).css(sty4);
+          });
+          $.each($("#searchInout"), function (i, o) {
+            $(this).css(sty5);
+          });
+          $.each($("#searchInout:focus"), function (i, o) {
+            $(this).css(sty6);
+          });
+          $.each($("#searchImage"), function (i, o) {
+            $(this).css(sty7);
+          });
+          $.each($(".schoolBox"), function (i, o) {
+            $(this).css(sty8);
+          });
+          $.each($(".school"), function (i, o) {
+            $(this).css(sty9);
+          });
+          $.each($(".schoolBoxTop"), function (i, o) {
+            $(this).css(sty10);
+          });
+          $.each($(".schoolImage"), function (i, o) {
+            $(this).css(sty11);
+          });
+          $.each($(".schoolName"), function (i, o) {
+            $(this).css(sty12);
+          });
+          $.each($(".schoolBoxBottom"), function (i, o) {
+            $(this).css(sty13);
+          });
+          $.each($(".bottomBoxContent"), function (i, o) {
+            $(this).css(sty14);
+          });
+          $.each($("#schoolForum"), function (i, o) {
+            $(this).css(sty15);
+          });
+          $.each($("#schoolSchedule"), function (i, o) {
+            $(this).css(sty16);
+          });
+          $.each($("#campusMap"), function (i, o) {
+            $(this).css(sty17);
+          });
+          $.each($("#schoolHomePage"), function (i, o) {
+            $(this).css(sty18);
+          });
+          $.each($(".word"), function (i, o) {
+            $(this).css(sty19);
+          });
+          $.each($(".in"), function (i, o) {
+            $(this).css(sty20);
+          });
+          $.each($(".navigationBar"), function (i, o) {
+            $(this).css(sty21);
+          });
+          $.each($("#home, #chat, #personal"), function (i, o) {
+            $(this).css(sty22);
+          });
+          $.each($("#home"), function (i, o) {
+            $(this).css(sty23);
+          });
+          $.each($("#personal"), function (i, o) {
+            $(this).css(sty24);
+          });
+          $.each($(".goButton"), function (i, o) {
+            $(this).css(sty25);
+          });
+          $.each($(".topword"), function (i, o) {
+            $(this).css(sty26);
+          });
+          $.each($(".top1"), function (i, o) {
+            $(this).css(sty27);
+          });
+          $.each($(".top2"), function (i, o) {
+            $(this).css(sty28);
+          });
+          $.each($(".top3"), function (i, o) {
+            $(this).css(sty29);
+          });
+          $.each($(".botword"), function (i, o) {
+            $(this).css(sty30);
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <!--검색-->
+    <div class="searchBox">
+
+    </div>
+    <!--검색-->
+
+    <!--학교-->
+    <div class="schoolBox">
+      <div class="school">
+        <!--로고,이름-->
+        <div class="schoolBoxTop">
+          <div class="schoolImage">
+        
+          </div>
+          <div class="schoolName">
+            <div class="schoolNameText">
+              MINGLE'R
+            </div>
+          </div>
+        </div>
+        <!--로고,이름-->
+        <div class="schoolBoxBottom">
+          <div class="bottomBoxContent">
+            <a href="fourmPage.html">
+            <button id="schoolForum" type="button" name="button">
+              <div class="word">
+              <img src="assets/images/chatPage.png"> 
+              <div class="in">Community</div>
+            </div>
+            </button></a>
+            <a href="setting.html">
+            <button id="schoolSchedule" type="button" name="button">
+              <div class="word">
+              <img src="assets/images/setting.png"> 
+              <div class="in">Service</div>
+              </div>
+            </button>
+            </a>
+            <a href="conb.html">
+            <button id="campusMap" type="button" name="button">
+              <div class="word">
+              <img src="assets/images/job.png"> 
+              <div class="in">Job</div>
+              </div>
+            </button>
+            </a>
+            <a href="home.html">
+            <button id="schoolHomePage" type="button" name="button">
+              <div class="word">
+            <img src="assets/images/housing.png"> 
+            <div class="in">Housing</div>
+          </button>
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--학교-->
+
+    <!--게시판-->
+
+    <!--게시판-->
+
+    <!--공지사항-->
+
+    <!--공지사항-->
+
+
+
+  <div style="z-index:99;bottom:0px;left:0px;right:0px;position:absoulte !important; position:fixed;" class="navigationBar">
+    <div class="topword">
+      <div class="top1">
+        Readyn@bu.ac.kr
+      </div>
+      <a href="login.html">
+      <div class="top2">
+        Logout
+      </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

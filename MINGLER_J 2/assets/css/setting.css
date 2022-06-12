@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Noto Sans', sans-serif;
+}
+body {
+  margin-bottom: 90px;
+}
+
+.schoolBox {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.school {
+  width: 343px;
+  height: 200px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 3px 6px #DBDBDB;
+}
+
+.schoolBoxTop {
+  width: 343px;
+  height: 44px;
+}
+.schoolImage {
+  margin-left: 12px;
+  margin-top: 12px;
+  display: inline-block;
+}
+.schoolName {
+  display: inline-block;
+  font-size: 22px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-weight: 700;
+}
+
+.topword{
+  margin-top: 10px;
+}
+.top1{
+  margin-right: 80px;
+  display: inline;
+}
+.top2{
+  color: #0569CD;
+  margin-right: 10px;
+  display: inline;
+}
+.top3{
+  color: #0569CD;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.botword{
+  display: flex;
+  color: #0569CD;
+  margin-top: 10px;
+}
+
+.houseword{
+  position: relative;
+  display: inline;
+  font-size: 18px;
+  bottom: 6px;
+  left: 5px;
+}
+.ex{
+  position: relative;
+  display: inline;
+  bottom: 12px;
+}
